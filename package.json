@@ -1,0 +1,14 @@
+{
+  "name": "allowance",
+  "version": "1.0.0",
+  "description": "Application for searching user permissions and allowance",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "al",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
