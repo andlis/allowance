@@ -4,6 +4,7 @@
   "description": "Application for searching user permissions and allowance",
   "main": "app.js",
   "scripts": {
+    "mocha_watch": "mocha -w app.js test.js",
     "test": "mocha test.js"
   },
   "author": "al",
