@@ -38,4 +38,18 @@ describe('Listing cities on /cities', function () {
             .get('/cities')
             .expect(JSON.stringify(['Lotopia', 'Caspiana', 'Indigo']), done);
     });
+
+    it('Returns 201 on creating new city', function (done) {
+        request(app)
+        .post('/cities')
+        .send('name=Springfield&description=where+the+simpsons+live')
+        .expect(201, done);
+    });
+
+    it('Returns created city name on creating new city', function (done) {
+        request(app)
+        .post('/cities')
+        .send('name=Springfield&description=where+the+simpsons+live')
+        .expect(/springfield/i, done);
+    });
 });
